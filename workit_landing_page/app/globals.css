@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-dark-purple: 36 5 62;
+  --color-eucaplyptus: 68 255 161;
+  --color-davys-grey: 88 77 98;
+  --color-ghost-white: 253 250 255;
+  --color-white: 255 255 255;
+}
