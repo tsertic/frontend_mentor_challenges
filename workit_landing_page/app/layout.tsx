@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Navigation } from "./_components/Navigation/Navigation";
+import { Footer } from "./_components/Footer/Footer";
 
 const manrope = localFont({
   src: [
@@ -41,9 +43,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${fraunces144.variable} font-manrope text-body`}
+        className={`${manrope.variable} ${fraunces144.variable} font-manrope text-body padding-body-b`}
       >
+        <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

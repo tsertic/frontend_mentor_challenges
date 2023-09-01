@@ -13,7 +13,7 @@ const config: Config = {
     },
     fontSize: {
       body: ["18px", { lineHeight: "32px", fontWeight: "400" }],
-      button: ["18px", { lineHeight: "32px", fontWeight: "700" }],
+      button: ["18px", { lineHeight: "32px", fontWeight: 700 }],
       headingL: ["80px", { lineHeight: "80px", fontWeight: "600" }],
       headingM: ["56px", { lineHeight: "64px", fontWeight: "600" }],
       headingS: ["32px", { lineHeight: "40px", fontWeight: "600" }],

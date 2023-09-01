@@ -9,3 +9,12 @@
   --color-ghost-white: 253 250 255;
   --color-white: 255 255 255;
 }
+
+@layer utilities {
+  .padding-x {
+    @apply px-[16px];
+  }
+  .padding-body-b {
+    @apply pb-[64px] md:pb-[120px] xl:pb-[110px];
+  }
+}
