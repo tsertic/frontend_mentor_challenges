@@ -17,9 +17,9 @@ export const About = () => {
           Be the first to test
         </h3>
         <p className="mb-[24px] xl:mb-[32px]">
-          Hi, I'm Louis Graham, the founder of the company. Book a demo call
+          Hi, I{"'"}m Louis Graham, the founder of the company. Book a demo call
           with me to become a beta tester for our app and kickstart your
-          company. Apply for access below and I’ll be in touch to schedule a
+          company. Apply for access below and I{"’"}ll be in touch to schedule a
           call.
         </p>
         <Button>Apply for test</Button>

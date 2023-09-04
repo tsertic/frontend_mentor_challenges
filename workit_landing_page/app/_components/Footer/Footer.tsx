@@ -1,6 +1,5 @@
 import React from "react";
 import { Logo } from "../UI/Logo";
-import Image from "next/image";
 import { footerSocialIcons } from "@/constants";
 import { SocialIcons } from "../icons/SocialIcons";
 export const Footer = () => {
@@ -16,7 +15,7 @@ export const Footer = () => {
           )
             return;
           return (
-            <a href={icon.url} className="cursor-pointer ">
+            <a href={icon.url} className="cursor-pointer" key={icon.name}>
               <SocialIcons name={icon.name} />
             </a>
           );
