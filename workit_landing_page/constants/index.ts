@@ -15,3 +15,21 @@ export const servicePerks = [
       "Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.",
   },
 ];
+
+export const footerSocialIcons = [
+  {
+    name: "facebook",
+    path: "/images/icon-facebook.svg",
+    url: "#",
+  },
+  {
+    name: "twitter",
+    path: "/images/icon-facebook.svg",
+    url: "#",
+  },
+  {
+    name: "instagram",
+    path: "/images/icon-facebook.svg",
+    url: "#",
+  },
+];

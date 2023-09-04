@@ -20,6 +20,9 @@
   .container-wide {
     @apply w-full max-w-[1110px] mx-auto;
   }
+  .social-icon {
+    @apply fill-davys-grey hover:fill-dark-purple duration-300;
+  }
 }
 
 .rounded-bottom-large {
