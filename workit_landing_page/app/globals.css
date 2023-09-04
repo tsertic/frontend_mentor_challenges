@@ -18,3 +18,30 @@
     @apply pb-[64px] md:pb-[120px] xl:pb-[110px];
   }
 }
+.custom-shape-divider-bottom-1693640001 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1693640001 svg {
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 13px;
+}
+
+.custom-shape-divider-bottom-1693640001 .shape-fill {
+  fill: #979797;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1693640001 svg {
+    width: calc(106% + 1.3px);
+    height: 16px;
+  }
+}
