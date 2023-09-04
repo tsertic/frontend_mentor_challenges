@@ -3,7 +3,7 @@ import { Button } from "../UI/Button";
 import Image from "next/image";
 export const HeroSection = () => {
   return (
-    <section className="pt-[130px] pb-[156px] px-[16px] bg-dark-purple text-white relative flex flex-col items-center">
+    <section className=" pt-[130px] pb-[156px] px-[16px] bg-dark-purple text-white relative flex flex-col items-center ">
       <h1 className="text-center font-fraunces mb-[40px] text-[46px] leading-[50px] md:text-headingM xl:text-headingL w-full md:max-w-[573px] lg:max-w-[635px]">
         Data{" "}
         <span className="border-b-[2px] border-eucaplyptus pb-[-5px] inline-block">
@@ -34,13 +34,15 @@ export const HeroSection = () => {
         alt="decorative spiral"
         className="absolute hidden md:block md:left-[-180px] xl:left-[-100px] "
       />
-      <Image
-        src="/images/bg-pattern-2.svg"
-        width={141}
-        height={112}
-        alt="decorative spiral"
-        className="absolute hidden md:block top-[300px] md:right-[-70px] xl:right-[-50px] "
-      />
+      <div className="absolute h-[152px] w-[141px] right-0 hidden md:block top-[300px] overflow-hidden">
+        <Image
+          src="/images/bg-pattern-2.svg"
+          width={141}
+          height={112}
+          alt="decorative spiral"
+          className="absolute top-0 md:right-[-70px] xl:right-[-50px] "
+        />
+      </div>
       <div className="h-[10px] md:h-[88px] xl:h-[139px] flex flex-col items-center">
         <Image
           src="/images/image-hero.webp"
