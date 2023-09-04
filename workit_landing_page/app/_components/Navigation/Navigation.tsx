@@ -25,7 +25,7 @@ export const Navigation = () => {
   }, [dispatch]);
   return (
     <div className="fixed w-full z-40">
-      <nav className="pt-[32px] flex  max-w-[1110px] mx-auto justify-between padding-x">
+      <nav className="pt-[32px] flex container-wide justify-between padding-x">
         <Logo type={dark ? "dark" : "light"} />
         <ButtonLink dark={dark}>Apply for access</ButtonLink>
       </nav>

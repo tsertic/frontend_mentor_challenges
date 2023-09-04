@@ -3,7 +3,7 @@ import { Button } from "../UI/Button";
 import Image from "next/image";
 export const HeroSection = () => {
   return (
-    <section className=" pt-[130px] pb-[156px] px-[16px] bg-dark-purple text-white relative flex flex-col items-center ">
+    <section className=" pt-[130px] pb-[156px] px-[16px] bg-dark-purple text-white relative flex flex-col items-center rounded-bottom-large">
       <h1 className="text-center font-fraunces mb-[40px] text-[46px] leading-[50px] md:text-headingM xl:text-headingL w-full md:max-w-[573px] lg:max-w-[635px]">
         Data{" "}
         <span className="border-b-[2px] border-eucaplyptus pb-[-5px] inline-block">
@@ -14,19 +14,7 @@ export const HeroSection = () => {
         your needs.
       </h1>
       <Button>Learn More</Button>
-      <div className="custom-shape-divider-bottom-1693640001  ">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-            className="fill-ghost-white"
-          ></path>
-        </svg>
-      </div>
+
       <Image
         src="/images/bg-pattern-1.svg"
         width={270}

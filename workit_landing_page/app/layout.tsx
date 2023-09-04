@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Navigation } from "./_components/Navigation/Navigation";
 import { Footer } from "./_components/Footer/Footer";
-import { Provider } from "react-redux";
-import { store } from "@/redux/store";
 import { ReduxProvider } from "./_components/providers/ReduxProvider";
 
 const manrope = localFont({
@@ -46,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${fraunces144.variable} font-manrope text-body padding-body-b`}
+        className={`${manrope.variable} ${fraunces144.variable} font-manrope text-bodyS xl:text-body padding-body-b`}
       >
         <ReduxProvider>
           <Navigation />
