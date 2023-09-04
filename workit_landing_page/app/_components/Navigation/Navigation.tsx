@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Logo } from "../UI/Logo";
 import { ButtonLink } from "../UI/ButtonLink";
 import {
   changeTheme,
   selectNavigationState,
-} from "@/app/_redux/slices/navigation.slice";
+} from "@/redux/slices/navigation.slice";
 import { useDispatch, useSelector } from "react-redux";
 
 export const Navigation = () => {
