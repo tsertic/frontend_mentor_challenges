@@ -10,7 +10,14 @@
   .btn-big {
     @apply text-md py-3 px-5;
   }
+
   .container-wide {
     @apply w-full max-w-[1160px] mx-auto;
+  }
+  .hero-gradient1 {
+    @apply bg-gradient-to-tl from-sky-700 to-lime-600;
+  }
+  .hero-gradient {
+    @apply bg-gradient-to-br from-[#D6FCFE]/0 to-[#D6E6FE];
   }
 }
