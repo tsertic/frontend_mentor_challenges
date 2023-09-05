@@ -3,7 +3,7 @@ import { Button } from "../UI/Button";
 import Image from "next/image";
 export const HeroSection = () => {
   return (
-    <section className=" pt-[130px] pb-[156px] px-[16px] bg-dark-purple text-white relative flex flex-col items-center rounded-bottom-large">
+    <section className=" pt-[140px] pb-[156px] px-[16px] bg-dark-purple text-white relative flex flex-col items-center rounded-bottom-large">
       <h1 className="text-center font-fraunces mb-[40px] text-[46px] leading-[50px] md:text-headingM xl:text-headingL w-full md:max-w-[573px] lg:max-w-[635px]">
         Data{" "}
         <span className="border-b-[2px] border-eucaplyptus pb-[-5px] inline-block">
@@ -13,7 +13,7 @@ export const HeroSection = () => {
         <br />
         your needs.
       </h1>
-      <Button>Learn More</Button>
+      <Button ariaLabel="link to learn more page">Learn More</Button>
 
       <Image
         src="/images/bg-pattern-1.svg"

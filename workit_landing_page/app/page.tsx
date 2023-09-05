@@ -10,7 +10,7 @@ export default function Home() {
       <section className="bg-ghost-white padding-x pt-[160px] md:pt-[200px] xl:pt-[260px] pb-[71px] md:pb-[103px] xl:pb-[171px] rounded-bottom-large ">
         <ServicePerks />
       </section>
-      <section className="pt-[100px] pb-[80px] ">
+      <section className="pt-[100px] pb-[80px] padding-x ">
         <About />
       </section>
     </main>

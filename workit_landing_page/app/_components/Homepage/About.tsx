@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../UI/Button";
-
 export const About = () => {
   return (
     <div className="w-full md:max-w-[689px] md:mx-auto xl:container-wide relative md:pb-[200px] xl:pb-[100px]">
@@ -22,7 +21,14 @@ export const About = () => {
           company. Apply for access below and I{"’"}ll be in touch to schedule a
           call.
         </p>
-        <Button>Apply for test</Button>
+        <Button ariaLabel="apply for test">Apply for test</Button>
+        <Image
+          src="/images/bg-pattern-3.svg"
+          width={173}
+          height={137}
+          alt="decoration purpose, pattern spirals"
+          className="hidden md:block absolute  bottom-[-50px] xl:right-[60px] md:right-0"
+        />
       </div>
     </div>
   );

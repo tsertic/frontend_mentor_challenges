@@ -15,7 +15,12 @@ export const Footer = () => {
           )
             return;
           return (
-            <a href={icon.url} className="cursor-pointer" key={icon.name}>
+            <a
+              href={icon.url}
+              className="cursor-pointer"
+              aria-label={`link to ${icon.name} page`}
+              key={icon.name}
+            >
               <SocialIcons name={icon.name} />
             </a>
           );

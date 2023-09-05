@@ -27,7 +27,9 @@ export const Navigation = () => {
     <div className="fixed w-full z-40">
       <nav className="pt-[32px] flex container-wide justify-between padding-x">
         <Logo type={dark ? "dark" : "light"} />
-        <ButtonLink dark={dark}>Apply for access</ButtonLink>
+        <ButtonLink ariaLabel="link for apply for access page" dark={dark}>
+          Apply for access
+        </ButtonLink>
       </nav>
     </div>
   );
