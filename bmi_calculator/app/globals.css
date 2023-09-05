@@ -3,21 +3,17 @@
 @tailwind utilities;
 
 @layer components {
-  .btn {
-    @apply inline-block py-2 px-4 rounded font-bold;
+  .padding-x {
+    @apply px-[24px];
   }
-
-  .btn-big {
-    @apply text-md py-3 px-5;
-  }
-
   .container-wide {
     @apply w-full max-w-[1160px] mx-auto;
-  }
-  .hero-gradient1 {
-    @apply bg-gradient-to-tl from-sky-700 to-lime-600;
   }
   .hero-gradient {
     @apply bg-gradient-to-br from-[#D6FCFE]/0 to-[#D6E6FE];
   }
+}
+
+.box-shadow {
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 }
