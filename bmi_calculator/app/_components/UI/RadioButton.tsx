@@ -4,12 +4,14 @@ interface IRadioButton {
   name: string;
   value: string;
   text: string;
+  onRadioChange: (value: string) => void;
 }
 export const RadioButton: React.FC<IRadioButton> = ({
   htmlFor,
   name,
   value,
   text,
+  onRadioChange,
 }) => {
   return (
     <label
@@ -21,6 +23,7 @@ export const RadioButton: React.FC<IRadioButton> = ({
         name={name}
         id={htmlFor}
         value={value}
+        onChange={(e) => onRadioChange(e.target.value)}
         className="peer hidden"
       />
 

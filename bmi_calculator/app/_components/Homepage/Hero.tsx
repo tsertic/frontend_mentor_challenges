@@ -6,9 +6,9 @@ export const Hero = () => {
   return (
     <div className="container-wide xl:relative ">
       <HeroGradiant />
-      <div className="flex flex-col xl:flex-row items-center gap-[48px] md:gap-[40px] xl:gap-[32px] pt-[96px] md:pt-[112px] xl:pt-[167px] max-xl:padding-x">
-        <div className="flex-1 text-center xl:text-left">
-          <h1 className="text-headingL xl:text-headingXL capitalize text-gunmetal mb-[24px] xl:mb-[35px] ">
+      <div className="flex flex-col xl:flex-row max-xl:items-center  gap-[48px] md:gap-[40px] xl:gap-[32px] pt-[96px] md:pt-[112px] xl:pt-[167px] max-xl:padding-x">
+        <div className="flex-1 text-center xl:text-left xl:pt-[100px] max-w-[686px]">
+          <h1 className="text-headingL xl:text-headingXL  capitalize text-gunmetal mb-[24px] xl:mb-[35px] ">
             Body Mass
             <br /> Index Calculator
           </h1>

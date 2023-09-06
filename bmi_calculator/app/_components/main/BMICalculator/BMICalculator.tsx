@@ -1,30 +1,76 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { RadioButton } from "../../UI/RadioButton";
-
+import { BMIResult } from "./BMIResult";
+import convert from "convert";
+import { MetricForm } from "./MetricForm";
+import { calculateBMI, convertKgToStones } from "@/utils";
+import { ImperialForm } from "./ImperialForm";
 export const BMICalculator = () => {
+  const [siSystem, setSiSystem] = useState("metric");
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
+  const [bmi, setBmi] = useState(0);
+  useEffect(() => {
+    if (weight === "" || height === "") setBmi(0);
+    if (weight && height) {
+      setBmi(Number(calculateBMI(height, weight)));
+    }
+  }, [weight, height]);
+  console.log(convert(84, "kilograms").to("stones"));
+  const handleSetWeight = (value: string) => {
+    setWeight(value);
+  };
+  const handleSetHeight = (value: string) => {
+    setHeight(() => {
+      return value;
+    });
+
+    setBmi(() => Number(calculateBMI(height, weight)));
+  };
+
+  console.log(convertKgToStones("80"));
   return (
-    <div className="w-full bg-white box-shadow  felx flex-col gap-[24px] md:gap-[32px] max-w-[564px] p-[24px] md:p-[32px]">
-      BMICalculator
-      <form>
-        <div className="flex w-full items-center gap-[24px]">
-          <div className="flex-1">
-            <RadioButton
-              value="metric"
-              name="si_system"
-              htmlFor="metric"
-              text="metric"
-            />
-          </div>
-          <div className="flex-1">
-            <RadioButton
-              value="imperial"
-              name="si_system"
-              htmlFor="imperial"
-              text="imperial"
-            />
-          </div>
+    <div className="w-full bg-white box-shadow  flex flex-col gap-[24px] md:gap-[32px] md:max-w-[686px] xl:max-w-[564px] p-[24px] md:p-[32px]">
+      <h1 className="text-gunmetal text-headingM ">Enter your details below</h1>
+      <div className="flex w-full items-center gap-[24px]">
+        <div className="flex-1">
+          <RadioButton
+            value="metric"
+            name="si_system"
+            htmlFor="metric"
+            text="metric"
+            onRadioChange={setSiSystem}
+          />
         </div>
-      </form>
+        <div className="flex-1">
+          <RadioButton
+            value="imperial"
+            name="si_system"
+            htmlFor="imperial"
+            text="imperial"
+            onRadioChange={setSiSystem}
+          />
+        </div>
+      </div>
+      {siSystem === "metric" && (
+        <MetricForm
+          weight={weight}
+          height={height}
+          setWeight={handleSetWeight}
+          setHeight={handleSetHeight}
+        />
+      )}
+      {siSystem === "imperial" && (
+        <ImperialForm
+          weight={weight}
+          height={height}
+          setWeight={handleSetWeight}
+          setHeight={handleSetHeight}
+        />
+      )}
+
+      <BMIResult bmi={bmi} />
     </div>
   );
 };
