@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { RadioButton } from "../../UI/RadioButton";
 import { BMIResult } from "./BMIResult";
-import convert from "convert";
 import { MetricForm } from "./MetricForm";
 import { calculateBMI, convertKgToStones } from "@/utils";
 import { ImperialForm } from "./ImperialForm";
@@ -17,11 +16,12 @@ export const BMICalculator = () => {
       setBmi(Number(calculateBMI(height, weight)));
     }
   }, [weight, height]);
-  console.log(convert(84, "kilograms").to("stones"));
   const handleSetWeight = (value: string) => {
+    if (isNaN(+value)) return;
     setWeight(value);
   };
   const handleSetHeight = (value: string) => {
+    if (isNaN(+value)) return;
     setHeight(() => {
       return value;
     });
@@ -41,6 +41,7 @@ export const BMICalculator = () => {
             htmlFor="metric"
             text="metric"
             onRadioChange={setSiSystem}
+            siSystem={siSystem}
           />
         </div>
         <div className="flex-1">
@@ -50,6 +51,7 @@ export const BMICalculator = () => {
             htmlFor="imperial"
             text="imperial"
             onRadioChange={setSiSystem}
+            siSystem={siSystem}
           />
         </div>
       </div>
