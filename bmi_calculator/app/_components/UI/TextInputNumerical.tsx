@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 interface ITextInputNumerical {
   value: string;
-  onChange: (value: string) => void;
+  onChange: (value: string, type?: string) => void;
   name: string;
   text: string;
   htmlFor: string;
@@ -32,7 +32,7 @@ export const TextInputNumerical: React.FC<ITextInputNumerical> = ({
         name={name}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e) => onChange(e.target.value, e.target.name)}
         className=" border-none outline-none w-full"
       />
       <span className="text-blue">{text}</span>

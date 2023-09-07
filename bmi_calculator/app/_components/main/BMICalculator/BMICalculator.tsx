@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { RadioButton } from "../../UI/RadioButton";
 import { BMIResult } from "./BMIResult";
 import { MetricForm } from "./MetricForm";
-import { calculateBMI, convertKgToStones } from "@/utils";
+import { calculateBMI, convertCmToFtIn } from "@/utils";
 import { ImperialForm } from "./ImperialForm";
 export const BMICalculator = () => {
   const [siSystem, setSiSystem] = useState("metric");
@@ -29,7 +29,7 @@ export const BMICalculator = () => {
     setBmi(() => Number(calculateBMI(height, weight)));
   };
 
-  console.log(convertKgToStones("80"));
+  console.log(convertCmToFtIn("100"));
   return (
     <div className="w-full bg-white box-shadow  flex flex-col gap-[24px] md:gap-[32px] md:max-w-[686px] xl:max-w-[564px] p-[24px] md:p-[32px]">
       <h1 className="text-gunmetal text-headingM ">Enter your details below</h1>
