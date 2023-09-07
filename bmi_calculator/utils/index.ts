@@ -1,4 +1,5 @@
 import { healthyBMILowerRange, healthyBMIUpperRange } from "@/constants";
+import { TSiSystem } from "@/types/types";
 import convert from "convert";
 const roundNumberToTwoDecimal = (num: number): number =>
   Math.round(num * 100) / 100;
@@ -62,7 +63,10 @@ export const getKgFromBMIAndCm = (cm: number, bmi: number) => {
   const m2 = (cm * cm) / 10000;
   return roundNumberToTwoDecimal(m2 * bmi);
 };
-export const getIdealKgArrayFromCm = (cm: number): [number, number] => {
+export const getIdealKgArrayFromCm = (
+  cm: number,
+  siSystem: TSiSystem
+): [number, number] => {
   return [
     getKgFromBMIAndCm(cm, healthyBMILowerRange),
     getKgFromBMIAndCm(cm, healthyBMIUpperRange),

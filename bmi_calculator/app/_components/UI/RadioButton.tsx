@@ -1,11 +1,12 @@
-import React from "react";
+import { TSiSystem } from "@/types/types";
+import React, { ChangeEvent, ChangeEventHandler } from "react";
 interface IRadioButton {
   htmlFor: string;
   name: string;
-  value: string;
+  value: TSiSystem;
   text: string;
-  onRadioChange: (value: string) => void;
-  siSystem: string;
+  onRadioChange: (value: TSiSystem) => void;
+  siSystem: TSiSystem;
 }
 export const RadioButton: React.FC<IRadioButton> = ({
   htmlFor,
@@ -16,6 +17,12 @@ export const RadioButton: React.FC<IRadioButton> = ({
   siSystem,
 }) => {
   const isChecked = siSystem === value;
+  const handleOnChange: ChangeEventHandler<HTMLInputElement> = (e) => {
+    if (e.target.value !== "metric" && e.target.value !== "imperial") {
+      return;
+    }
+    return onRadioChange(e.target.value);
+  };
   return (
     <label
       className="w-full align-middle relative pl-[48px] py-[4px] cursor-pointer group"
@@ -27,7 +34,7 @@ export const RadioButton: React.FC<IRadioButton> = ({
         id={htmlFor}
         value={value}
         checked={isChecked}
-        onChange={(e) => onRadioChange(e.target.value)}
+        onChange={handleOnChange}
         className=" hidden"
       />
 

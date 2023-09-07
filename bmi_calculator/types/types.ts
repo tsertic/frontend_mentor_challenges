@@ -4,3 +4,4 @@ export interface IBMIForm {
   setWeight: (weight: string) => void;
   setHeight: (height: string) => void;
 }
+export type TSiSystem = "imperial" | "metric";

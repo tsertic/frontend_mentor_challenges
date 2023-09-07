@@ -5,21 +5,23 @@ import React from "react";
 interface IBMIResult {
   bmi: number;
   height: number;
+  siSystem: "imperial" | "metric";
 }
-export const BMIResult: React.FC<IBMIResult> = ({ bmi, height }) => {
+export const BMIResult: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
   return (
     <div className=" max-w p-[32px] bg-blue text-white   rounded-l-[16px] rounded-r-[99px] results-gradient">
       {bmi === 0 ? (
         <BMIResultNoValue />
       ) : (
-        <BMIResultValue bmi={bmi} height={height} />
+        <BMIResultValue bmi={bmi} height={height} siSystem={siSystem} />
       )}
     </div>
   );
 };
 
-const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height }) => {
+const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
   let resultText = "";
+  let idealWeightText: React.ReactElement;
   if (bmi < 18.5) {
     resultText = BMIResultsText["underweight"].text;
   }
@@ -32,18 +34,23 @@ const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height }) => {
   if (bmi > 30) {
     resultText = BMIResultsText["obese"].text;
   }
-  const [lowerIdealKg, upperIdealKg] = getIdealKgArrayFromCm(height);
+  if (siSystem === "imperial") {
+    const [lowerIdealKg, upperIdealKg] = getIdealKgArrayFromCm(height);
+    idealWeightText = (
+      <>
+        <span className=" font-bold">{lowerIdealKg}kgs</span> -{" "}
+        <span className="font-bold">{upperIdealKg}kgs</span>
+      </>
+    );
+  }
   return (
     <div className="flex gap-[24px]">
       <div className="flex-1">
-        <p>Your BMI is...</p>
-        <p>{bmi}</p>
+        <p className="text-bodyM_bold">Your BMI is...</p>
+        <p className="text-headingXL">{bmi}</p>
       </div>
       <div className="flex-1">
-        <p>
-          {resultText} <span className=" font-bold">{lowerIdealKg}kgs</span> -{" "}
-          <span className="font-bold">{upperIdealKg}kgs</span>
-        </p>
+        <p>{resultText}</p>
       </div>
     </div>
   );

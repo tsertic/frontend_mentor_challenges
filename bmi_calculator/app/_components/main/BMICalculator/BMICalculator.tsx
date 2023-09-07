@@ -5,8 +5,10 @@ import { BMIResult } from "./BMIResult";
 import { MetricForm } from "./MetricForm";
 import { calculateBMI, convertCmToFtIn } from "@/utils";
 import { ImperialForm } from "./ImperialForm";
+import { TSiSystem } from "@/types/types";
+
 export const BMICalculator = () => {
-  const [siSystem, setSiSystem] = useState("metric");
+  const [siSystem, setSiSystem] = useState<TSiSystem>("metric");
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
   const [bmi, setBmi] = useState(0);
@@ -72,7 +74,7 @@ export const BMICalculator = () => {
         />
       )}
 
-      <BMIResult bmi={bmi} height={+height} />
+      <BMIResult bmi={bmi} height={+height} siSystem={siSystem} />
     </div>
   );
 };
