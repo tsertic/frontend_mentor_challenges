@@ -72,7 +72,7 @@ export const BMICalculator = () => {
         />
       )}
 
-      <BMIResult bmi={bmi} />
+      <BMIResult bmi={bmi} height={+height} />
     </div>
   );
 };
