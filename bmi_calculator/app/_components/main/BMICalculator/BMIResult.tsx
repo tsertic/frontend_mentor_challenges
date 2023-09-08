@@ -1,11 +1,12 @@
 import { BMIResultsText } from "@/constants";
-import { getIdealKgArrayFromCm } from "@/utils";
+import { TSiSystem } from "@/types/types";
+import { getIdealKgArrayFromCm, getIdealStLbsArrayFromCm } from "@/utils";
 import { Content } from "next/font/google";
 import React from "react";
 interface IBMIResult {
   bmi: number;
   height: number;
-  siSystem: "imperial" | "metric";
+  siSystem: TSiSystem;
 }
 export const BMIResult: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
   return (
@@ -21,7 +22,7 @@ export const BMIResult: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
 
 const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
   let resultText = "";
-  let idealWeightText: React.ReactElement;
+  let idealWeightText: React.ReactElement = <></>;
   if (bmi < 18.5) {
     resultText = BMIResultsText["underweight"].text;
   }
@@ -35,6 +36,20 @@ const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
     resultText = BMIResultsText["obese"].text;
   }
   if (siSystem === "imperial") {
+    const { min, max } = getIdealStLbsArrayFromCm(height);
+    idealWeightText = (
+      <>
+        <span className=" font-bold">
+          {min.st}St {min.lbs}lbs
+        </span>{" "}
+        -{" "}
+        <span className="font-bold">
+          {max.st}St {max.lbs}lbs
+        </span>
+      </>
+    );
+  }
+  if (siSystem === "metric") {
     const [lowerIdealKg, upperIdealKg] = getIdealKgArrayFromCm(height);
     idealWeightText = (
       <>
@@ -43,6 +58,7 @@ const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
       </>
     );
   }
+
   return (
     <div className="flex gap-[24px]">
       <div className="flex-1">
@@ -50,7 +66,9 @@ const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
         <p className="text-headingXL">{bmi}</p>
       </div>
       <div className="flex-1">
-        <p>{resultText}</p>
+        <p>
+          {resultText} {idealWeightText}
+        </p>
       </div>
     </div>
   );
