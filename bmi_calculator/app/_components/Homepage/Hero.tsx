@@ -4,7 +4,7 @@ import { BMICalculator } from "../main/BMICalculator/BMICalculator";
 
 export const Hero = () => {
   return (
-    <div className="container-wide xl:relative ">
+    <div className="container-wide xl:relative xl:pb-[90px]">
       <HeroGradiant />
       <div className="flex flex-col xl:flex-row max-xl:items-center  gap-[48px] md:gap-[40px] xl:gap-[32px] pt-[96px] md:pt-[112px] xl:pt-[167px] max-xl:padding-x">
         <div className="flex-1 text-center xl:text-left xl:pt-[100px] max-w-[686px]">

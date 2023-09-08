@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { RadioButton } from "../../UI/RadioButton";
 import { BMIResult } from "./BMIResult";
 import { MetricForm } from "./MetricForm";
-import { calculateBMI, convertCmToFtIn } from "@/utils";
+import { calculateBMI } from "@/utils";
 import { ImperialForm } from "./ImperialForm";
 import { TSiSystem } from "@/types/types";
 
@@ -31,9 +31,8 @@ export const BMICalculator = () => {
     setBmi(() => Number(calculateBMI(height, weight)));
   };
 
-  console.log(convertCmToFtIn("100"));
   return (
-    <div className="w-full bg-white box-shadow  flex flex-col gap-[24px] md:gap-[32px] md:max-w-[686px] xl:max-w-[564px] p-[24px] md:p-[32px]">
+    <div className="w-full bg-white box-shadow rounded-[16px] flex flex-col gap-[24px] md:gap-[32px] md:max-w-[686px] xl:max-w-[564px] p-[24px] md:p-[32px]">
       <h1 className="text-gunmetal text-headingM ">Enter your details below</h1>
       <div className="flex w-full items-center gap-[24px]">
         <div className="flex-1">

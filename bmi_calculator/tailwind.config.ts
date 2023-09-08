@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        lightblue: "#E7F5FE",
         blue: "#345ff6",
         gunmetal: "#253347",
         "dark-electric-blue": "#5e6e85",
@@ -19,10 +20,26 @@ const config: Config = {
         bodyM: ["16px", { lineHeight: "150%", fontWeight: "400" }],
         bodyM_bold: ["16px", { lineHeight: "150%", fontWeight: "600" }],
         bodyS: ["14px", { lineHeight: "150%", fontWeight: "400" }],
-        headingXL: ["64px", { lineHeight: "110%", fontWeight: "600" }],
-        headingL: ["48px", { lineHeight: "110%", fontWeight: "600" }],
-        headingM: ["24px", { lineHeight: "110%", fontWeight: "600" }],
-        headingS: ["20px", { lineHeight: "110%", fontWeight: "600" }],
+        headingXL: [
+          "64px",
+          { lineHeight: "110%", fontWeight: "600", letterSpacing: "-3.2px" },
+        ],
+        headingL: [
+          "48px",
+          { lineHeight: "110%", fontWeight: "600", letterSpacing: "-2.4px" },
+        ],
+        headingLMobile: [
+          "32px",
+          { lineHeight: "110%", fontWeight: "600", letterSpacing: "-1.6px" },
+        ],
+        headingM: [
+          "24px",
+          { lineHeight: "110%", fontWeight: "600", letterSpacing: "-1px" },
+        ],
+        headingS: [
+          "20px",
+          { lineHeight: "110%", fontWeight: "600", letterSpacing: "-5%" },
+        ],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

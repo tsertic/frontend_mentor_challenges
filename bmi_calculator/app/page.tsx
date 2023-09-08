@@ -1,8 +1,7 @@
 import { Hero, YourResult, Tips, BmiLimitations } from "./_components/Homepage";
-import { HeroGradiant } from "./_components/esthetics/HeroGradiant";
 const HomePage = () => {
   return (
-    <main className="">
+    <main className="flex flex-col gap-[72px] md:gap-[96px] items-center">
       <section>
         <Hero />
       </section>

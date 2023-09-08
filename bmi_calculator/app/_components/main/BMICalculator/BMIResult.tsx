@@ -1,7 +1,7 @@
 import { BMIResultsText } from "@/constants";
 import { TSiSystem } from "@/types/types";
 import { getIdealKgArrayFromCm, getIdealStLbsArrayFromCm } from "@/utils";
-import { Content } from "next/font/google";
+
 import React from "react";
 interface IBMIResult {
   bmi: number;
@@ -10,7 +10,7 @@ interface IBMIResult {
 }
 export const BMIResult: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
   return (
-    <div className=" max-w p-[32px] bg-blue text-white   rounded-l-[16px] rounded-r-[99px] results-gradient">
+    <div className=" max-w p-[32px] bg-blue text-white  rounded-[16px]  rounded-l-[16px] md:rounded-r-[99px] results-gradient">
       {bmi === 0 ? (
         <BMIResultNoValue />
       ) : (
