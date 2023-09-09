@@ -5,3 +5,10 @@ export interface IBMIForm {
   setHeight: (height: string) => void;
 }
 export type TSiSystem = "imperial" | "metric";
+
+export interface ICardData {
+  _id: string;
+  iconUrl: string;
+  title: string;
+  text: string;
+}
