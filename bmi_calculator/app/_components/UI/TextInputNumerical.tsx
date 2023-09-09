@@ -22,7 +22,7 @@ export const TextInputNumerical: React.FC<ITextInputNumerical> = ({
       htmlFor={htmlFor}
       className={`flex gap-[24px] px-[24px] py-[20px] ${
         focused && "border-blue"
-      }  border-2 text-headingM w-full`}
+      }  border-2 text-headingM w-full rounded-[12px]`}
     >
       <input
         type="text"
