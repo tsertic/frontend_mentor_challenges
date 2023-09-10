@@ -59,7 +59,7 @@ Add React Context,Redux or other state managment.
 ### Useful resources
 
 - [Rapidtables website](https://www.rapidtables.com/) - This helped me with formulas for coverting metric to imeprial and vice versa.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Tailwind docs](https://tailwindcss.com/docs/) - Always useful when working with tailwind.
 
 ## Author
 
