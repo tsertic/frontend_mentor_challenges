@@ -20,7 +20,7 @@ export const YourResult = () => {
       />
 
       <div className="flex-1 max-md:padding-x xl:pt-[150px]">
-        <h1 className="gunmetal text-headingLMobile xl:text-headingL mb-[32px] xl:mb-[35px]">
+        <h1 className="text-gunmetal text-headingLMobile xl:text-headingL mb-[32px] xl:mb-[35px]">
           What your BMI result means
         </h1>
         <p className="text-bodyM">

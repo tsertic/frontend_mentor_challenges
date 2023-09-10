@@ -29,7 +29,7 @@ const BMIResultValue: React.FC<IBMIResult> = ({ bmi, height, siSystem }) => {
   if (bmi >= 18.5 && bmi <= 24.9) {
     resultText = BMIResultsText["healthy"].text;
   }
-  if (bmi > 25 && bmi <= 29.9) {
+  if (bmi >= 25 && bmi <= 29.9) {
     resultText = BMIResultsText["overweight"].text;
   }
   if (bmi > 30) {

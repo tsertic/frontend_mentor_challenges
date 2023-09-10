@@ -33,7 +33,7 @@ export const TextInputNumerical: React.FC<ITextInputNumerical> = ({
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         onChange={(e) => onChange(e.target.value, e.target.name)}
-        className=" border-none outline-none w-full"
+        className=" border-none outline-none w-full text-gunmetal"
       />
       <span className="text-blue">{text}</span>
     </label>
