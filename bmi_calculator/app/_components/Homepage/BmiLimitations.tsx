@@ -5,7 +5,7 @@ export const BmiLimitations = () => {
   return (
     <div className="container-wide relative ">
       <div className="text-center xl:text-left w-full xl:max-w-[564px] xl:absolute xl:top-0 xl:left-0 mb-[56px]">
-        <p className="text-headingLMobile xl:text-headingL mb-[32px]  xl:mb-[35px] ">
+        <p className="text-headingLMobile xl:text-headingL mb-[32px]  xl:mb-[35px] text-gunmetal ">
           Limitations of BMI
         </p>
         <p>

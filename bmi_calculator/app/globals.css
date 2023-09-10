@@ -12,6 +12,9 @@
   .hero-gradient {
     @apply bg-gradient-to-br from-[#D6FCFE]/0 to-[#D6E6FE];
   }
+  .tips-gradient {
+    @apply bg-gradient-to-br from-[#D6FCFE]/0 to-[#D6E6FE]/20;
+  }
   .results-gradient {
     @apply bg-gradient-to-r from-[#345FF6] to-[#587DFF];
   }
