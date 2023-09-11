@@ -34,7 +34,7 @@ export const Footer = () => {
           <div>
             <GradientButton>Request Invite</GradientButton>
           </div>
-          <p className=" text-secondary-content/50">
+          <p className=" text-bodyS text-secondary-content/50">
             © Easybank. All Rights Reserved
           </p>
         </div>
