@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
+import { Footer } from "./_components/Layout/Footer/Footer";
+import { Navigation } from "./_components/Layout/Navigation/Navigation";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -23,7 +25,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${publicSans.className} bg-base-200`}>{children}</body>
+      <body className={`${publicSans.className} bg-base-200 text-base-content`}>
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

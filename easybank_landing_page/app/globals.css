@@ -37,15 +37,20 @@
     @apply flex flex-col items-center;
   }
   .container-wide {
-    @apply w-full max-w-[1110px] mx-auto;
+    @apply w-full max-w-[1110px] mx-auto max-[1158px]:px-[24px];
   }
 }
 @layer utilities {
   .primary-gradient {
     @apply bg-gradient-to-br from-primary to-primary-200;
   }
+  .primary-gradient-hover {
+    @apply bg-gradient-to-br from-primary/40 to-primary-200/40;
+  }
 }
-
+.backdrop-shadow {
+  background: linear-gradient(180deg, #2d314d 0%, rgba(45, 49, 77, 0) 100%);
+}
 /* 
 .primary-gradient {
   background: linear-gradient(
