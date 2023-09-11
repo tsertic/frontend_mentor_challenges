@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={publicSans.className}>{children}</body>
+      <body className={`${publicSans.className} bg-base-200`}>{children}</body>
     </html>
   );
 }

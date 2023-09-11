@@ -2,47 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .btn {
-    @apply inline-block py-2 px-4 rounded font-bold;
-  }
-
-  .btn-big {
-    @apply text-md py-3 px-5;
-  }
-  .container-wide {
-    @apply w-full max-w-[1160px] mx-auto;
-  }
-}
 :root {
   --color-base-100: 255 255 255;
-  --color-base-200: 240 240 240;
-  --color-base-content: 25 23 32;
+  --color-base-200: 250 250 250;
+  --color-base-300: 244 245 247;
+  --color-base-content: 149 151 165;
+  --color-base-content-heading: 45 49 77;
 
-  --color-primary: 255 83 49;
-  --color-primary-200: 255 113 99;
+  --color-primary: 51 211 94;
+  --color-primary-200: 42 182 217;
   --color-primary-content: 255 255 255;
-
-  --color-accent: 0 155 0;
-  --color-text: 33 33 33;
-  --color-success: 0 200 81;
-  --color-info: 51 181 229;
-  --color-warn: 255 187 51;
-  --color-error: 254 78 78;
+  --color-secondary: 255 83 49;
+  --color-secondary-content: 255 255 255;
 }
-
+/* Currently same as light but just for case if dark mode is implemented */
 :root[class~="dark"] {
-  --color-base-100: 17 17 17;
-  --color-base-200: 30 30 30;
-  --color-base-content: 245 245 245;
-  --color-primary: 255 83 49;
-  --color-primary-200: 255 113 99;
+  --color-base-100: 255 255 255;
+  --color-base-200: 250 250 250;
+  --color-base-300: 244 245 247;
+  --color-base-content: 149 151 165;
+  --color-base-content-heading: 45 49 77;
 
+  --color-primary: 51 211 94;
+  --color-primary-200: 42 182 217;
   --color-primary-content: 255 255 255;
-  --color-accent: 0 155 0;
-  --color-text: 33 33 33;
-  --color-success: 0 200 81;
-  --color-info: 51 181 229;
-  --color-warn: 255 187 51;
-  --color-error: 254 78 78;
+  --color-secondary: 255 83 49;
+  --color-secondary-content: 255 255 255;
 }
+@layer components {
+  .mobile-padding-x {
+    @apply px-[24px];
+  }
+  .flex-col-center {
+    @apply flex flex-col items-center;
+  }
+  .container-wide {
+    @apply w-full max-w-[1110px] mx-auto;
+  }
+}
+@layer utilities {
+  .primary-gradient {
+    @apply bg-gradient-to-br from-primary to-primary-200;
+  }
+}
+
+/* 
+.primary-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-200) 99.58%
+  );
+} */

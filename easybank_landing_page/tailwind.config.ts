@@ -11,25 +11,49 @@ const config: Config = {
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         "primary-200": "rgb(var(--color-primary-200) / <alpha-value>)",
-        accent: "rgb(var(--color-accent) / <alpha-value>)",
         "primary-content": "rgb(var(--color-primary-content) / <alpha-value>)",
+        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        "secondary-content":
+          "rgb(var(--color-secondary-content) / <alpha-value>)",
         "base-100": "rgb(var(--color-base-100) / <alpha-value>)",
         "base-200": "rgb(var(--color-base-200) / <alpha-value>)",
+        "base-300": "rgb(var(--color-base-300) / <alpha-value>)",
         "base-content": "rgb(var(--color-base-content) / <alpha-value>)",
-        text: "rgb(var(--color-text) / <alpha-value>)",
-        success: "rgb(var(--color-success) / <alpha-value>)",
-        info: "rgb(var(--color-info) / <alpha-value>)",
-        warn: "rgb(var(--color-warn) / <alpha-value>)",
-        error: "rgb(var(--color-error) / <alpha-value>)",
+        "base-content-heading":
+          "rgb(var(--color-base-content-heading) / <alpha-value>)",
       },
       fontSize: {
-        bodyM: ["16px", { lineHeight: "150%", fontWeight: "400" }],
-        bodyM_bold: ["16px", { lineHeight: "150%", fontWeight: "600" }],
-        bodyS: ["14px", { lineHeight: "150%", fontWeight: "400" }],
-        headingXL: ["64px", { lineHeight: "110%", fontWeight: "600" }],
-        headingL: ["48px", { lineHeight: "110%", fontWeight: "600" }],
-        headingM: ["24px", { lineHeight: "110%", fontWeight: "600" }],
-        headingS: ["20px", { lineHeight: "110%", fontWeight: "600" }],
+        nav: ["14px", { fontWeight: "400", letterSpacing: "-0.188px" }],
+        navMobile: ["18px", { fontWeight: "400", letterSpacing: "-0.138px" }],
+        bodyL: [
+          "18px",
+          { lineHeight: "155%", fontWeight: "400", letterSpacing: "-0.281px" },
+        ],
+        bodyM: [
+          "16px",
+          { lineHeight: "26px", fontWeight: "400", letterSpacing: "-0.25px" },
+        ],
+        bodyS: [
+          "15px",
+          { lineHeight: "25px", fontWeight: "400", letterSpacing: "-0.234px" },
+        ],
+        headingXL: [
+          "56px",
+          { lineHeight: "64px", fontWeight: "300", letterSpacing: "-1px" },
+        ],
+        headingL: [
+          "40px",
+          { lineHeight: "64px", fontWeight: "300", letterSpacing: "-0.714px" },
+        ],
+        headingM: ["32px", { fontWeight: "300", letterSpacing: "-0.571px" }],
+        headingS: [
+          "24px",
+          { lineHeight: "28px", fontWeight: "300", letterSpacing: "-0.429px" },
+        ],
+        headingXS: [
+          "20px",
+          { lineHeight: "28px", fontWeight: "300", letterSpacing: "-0.327px" },
+        ],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
