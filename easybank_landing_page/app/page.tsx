@@ -9,7 +9,7 @@ export default function Home() {
       <section className="bg-base-300 py-[64px] xl:py-[96px]">
         <WhyEasyBank />
       </section>
-      <section>
+      <section className="py-[88px] xl:py-[80px]">
         <LatestArticles />
       </section>
     </main>
