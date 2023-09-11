@@ -22,6 +22,7 @@ export const Footer = () => {
           {footer_links.map((link) => {
             return (
               <Link
+                key={link._id}
                 href={link.path}
                 className="text-bodyS capitalize w-[160px] hover:text-primary-focus transition-all duration-200"
               >
