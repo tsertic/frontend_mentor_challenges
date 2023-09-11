@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)",
+        "primary-focus": "rgb(var(--color-primary-focus) / <alpha-value>)",
         "primary-200": "rgb(var(--color-primary-200) / <alpha-value>)",
         "primary-content": "rgb(var(--color-primary-content) / <alpha-value>)",
         secondary: "rgb(var(--color-secondary) / <alpha-value>)",

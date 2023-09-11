@@ -1,3 +1,5 @@
+import { ISocialIcon } from "@/types/types";
+
 export const navigation_links = [
   {
     _id: "0",
@@ -117,5 +119,33 @@ export const latest_articles = [
       "After a lot of hard work by the whole team, we’re excited to launch our closed beta.It’s easy to request an invite through the site ",
     imgUrl: "/images/image-confetti.jpg",
     author: "Claire Robinson",
+  },
+];
+
+export const footer_social_icons: ISocialIcon[] = [
+  {
+    _id: "0",
+    type: "facebook",
+    url: "/",
+  },
+  {
+    _id: "1",
+    type: "youtube",
+    url: "/",
+  },
+  {
+    _id: "2",
+    type: "twitter",
+    url: "/",
+  },
+  {
+    _id: "3",
+    type: "pintrest",
+    url: "/",
+  },
+  {
+    _id: "4",
+    type: "instagram",
+    url: "/",
   },
 ];

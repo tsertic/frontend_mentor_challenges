@@ -11,3 +11,15 @@ export interface IArticleCard {
   imgUrl: string;
   author: string;
 }
+export type socialNetwork =
+  | "facebook"
+  | "youtube"
+  | "twitter"
+  | "pintrest"
+  | "instagram";
+
+export interface ISocialIcon {
+  _id: string;
+  type: socialNetwork;
+  url: string;
+}

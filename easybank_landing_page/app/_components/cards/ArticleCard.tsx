@@ -29,7 +29,7 @@ export const ArticleCard: React.FC<{ cardData: IArticleCard }> = ({
       </div>
       <div className="py-[24px] px-[31px] xl:px-[24px] flex flex-col gap-[8px]">
         <p className="text-[10px] font-normal leading-[18px]">By {author}</p>
-        <h3 className=" text-base-content-heading group-hover:text-primary text-[16px] leading-[20px] font-light transition-all duration-200">
+        <h3 className=" text-base-content-heading group-hover:text-primary-focus text-[16px] leading-[20px] font-light transition-all duration-200">
           {title}
         </h3>
         <p className="text-[13px] font-normal leading-[18px]">

@@ -21,7 +21,7 @@ export const Hero = () => {
           className="absolute bottom-[60px] right-[50%] translate-x-1/2 "
         />
       </div>
-      <div className="container-wide mb-[88px] lg:my-[180px]">
+      <div className="container-wide mb-[88px] lg:my-[180px] z-10 relative">
         <div className="text-center lg:text-left  w-full lg:max-w-[447px] ">
           <h1 className="text-headingL lg:text-headingXL text-base-content-heading  mb-[16px] xl:mb-[24px]">
             Next generation

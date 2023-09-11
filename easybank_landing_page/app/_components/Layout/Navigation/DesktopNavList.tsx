@@ -10,7 +10,7 @@ export const DesktopNavList = () => {
           <Link
             href={item.path}
             key={item._id}
-            className="relative capitalize hover:text-base-content-heading hover:after:w-full after:w-0 after:h-[4px] after:absolute after:bottom-[-32px] after:left-0 after:bg-primary after:transition-all duration-200 "
+            className="relative capitalize hover:text-base-content-heading hover:after:w-full after:w-0 after:h-[4px] after:absolute after:bottom-[-32px] after:left-0 after:primary-gradient after:transition-all duration-200 "
           >
             {item.text}
           </Link>

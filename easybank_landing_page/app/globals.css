@@ -10,9 +10,10 @@
   --color-base-content-heading: 45 49 77;
 
   --color-primary: 51 211 94;
+  --color-primary-focus: 48 200 143;
   --color-primary-200: 42 182 217;
   --color-primary-content: 255 255 255;
-  --color-secondary: 255 83 49;
+  --color-secondary: 45 49 77;
   --color-secondary-content: 255 255 255;
 }
 /* Currently same as light but just for case if dark mode is implemented */
@@ -24,9 +25,11 @@
   --color-base-content-heading: 45 49 77;
 
   --color-primary: 51 211 94;
+  --color-primary-focus: 48 200 143;
+
   --color-primary-200: 42 182 217;
   --color-primary-content: 255 255 255;
-  --color-secondary: 255 83 49;
+  --color-secondary: 45 49 77;
   --color-secondary-content: 255 255 255;
 }
 @layer components {
@@ -38,6 +41,9 @@
   }
   .container-wide {
     @apply w-full max-w-[1110px] mx-auto max-[1158px]:px-[24px];
+  }
+  .social-icon {
+    @apply group-hover:fill-primary-focus fill-base-100 transition-all duration-300;
   }
 }
 @layer utilities {
