@@ -58,6 +58,33 @@ export const footer_links = [
   },
 ];
 
+export const why_easybank_cards = [
+  {
+    _id: "0",
+    title: "Online Banking",
+    text: "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.",
+    iconPath: "/images/icon-online.svg",
+  },
+  {
+    _id: "1",
+    title: "Simple Budgeting",
+    text: "See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.",
+    iconPath: "/images/icon-budgeting.svg",
+  },
+  {
+    _id: "2",
+    title: "Fast Onboarding",
+    text: "We don’t do branches. Open your account in minutes online and start taking control of your finances right away.",
+    iconPath: "/images/icon-onboarding.svg",
+  },
+  {
+    _id: "3",
+    title: "Open API",
+    text: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
+    iconPath: "/images/icon-api.svg",
+  },
+];
+
 export const latest_articles = [
   {
     _id: "0",

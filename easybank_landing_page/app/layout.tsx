@@ -25,7 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${publicSans.className} bg-base-200 text-base-content`}>
+      <body
+        className={`${publicSans.className} bg-base-200 text-base-content text-bodyS xl:text-bodyM`}
+      >
         <Navigation />
         {children}
         <Footer />

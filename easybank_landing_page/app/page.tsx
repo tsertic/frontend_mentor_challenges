@@ -2,11 +2,11 @@ import { Hero, LatestArticles, WhyEasyBank } from "./_components/pageSections";
 
 export default function Home() {
   return (
-    <main className="pt-[80px]">
+    <main className="pt-[60px] xl:pt-[80px]">
       <section>
         <Hero />
       </section>
-      <section>
+      <section className="bg-base-300 py-[64px] xl:py-[96px]">
         <WhyEasyBank />
       </section>
       <section>

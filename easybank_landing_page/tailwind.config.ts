@@ -27,7 +27,7 @@ const config: Config = {
         navMobile: ["18px", { fontWeight: "400", letterSpacing: "-0.138px" }],
         bodyL: [
           "18px",
-          { lineHeight: "155%", fontWeight: "400", letterSpacing: "-0.281px" },
+          { lineHeight: "28px", fontWeight: "400", letterSpacing: "-0.281px" },
         ],
         bodyM: [
           "16px",
@@ -49,7 +49,14 @@ const config: Config = {
             letterSpacing: "-0.714px",
           },
         ],
-        headingM: ["32px", { fontWeight: "300", letterSpacing: "-0.571px" }],
+        headingM: [
+          "32px",
+          {
+            lineHeight: "normal",
+            fontWeight: "300",
+            letterSpacing: "-0.571px",
+          },
+        ],
         headingS: [
           "24px",
           { lineHeight: "28px", fontWeight: "300", letterSpacing: "-0.429px" },

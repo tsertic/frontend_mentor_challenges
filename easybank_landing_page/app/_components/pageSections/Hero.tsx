@@ -4,7 +4,7 @@ import { GradientButton } from "../UI/GradientButton";
 
 export const Hero = () => {
   return (
-    <div className="w-full relative h-full border-2 border-transparent overflow-x-hidden">
+    <div className="w-full relative h-full lg:border-2 border-transparent overflow-x-clip">
       <div className="h-[423px] w-full lg:hidden relative">
         <Image
           src="/images/bg-intro-mobile.svg"
@@ -21,7 +21,7 @@ export const Hero = () => {
           className="absolute bottom-[60px] right-[50%] translate-x-1/2 "
         />
       </div>
-      <div className="container-wide lg:my-[180px]">
+      <div className="container-wide mb-[88px] lg:my-[180px]">
         <div className="text-center lg:text-left  w-full lg:max-w-[447px] ">
           <h1 className="text-headingL lg:text-headingXL text-base-content-heading  mb-[16px] xl:mb-[24px]">
             Next generation
