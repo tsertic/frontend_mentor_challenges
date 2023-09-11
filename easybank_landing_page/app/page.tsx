@@ -2,7 +2,7 @@ import { Hero, LatestArticles, WhyEasyBank } from "./_components/pageSections";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-[80px]">
       <section>
         <Hero />
       </section>

@@ -12,7 +12,7 @@ export const Navigation = () => {
   return (
     <>
       <header className="absolute top-0 left-0 bg-white w-full  z-40">
-        <div className="container-wide flex justify-between items-center py-[22px] lg:py-[32px] ">
+        <div className="container-wide flex justify-between items-center py-[22px] lg:py-[18px] ">
           <Logo type="dark" />
           <DesktopNavList />
           <div className="hidden lg:block">

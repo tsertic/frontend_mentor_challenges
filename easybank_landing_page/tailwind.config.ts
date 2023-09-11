@@ -43,7 +43,11 @@ const config: Config = {
         ],
         headingL: [
           "40px",
-          { lineHeight: "64px", fontWeight: "300", letterSpacing: "-0.714px" },
+          {
+            lineHeight: "normal",
+            fontWeight: "300",
+            letterSpacing: "-0.714px",
+          },
         ],
         headingM: ["32px", { fontWeight: "300", letterSpacing: "-0.571px" }],
         headingS: [
