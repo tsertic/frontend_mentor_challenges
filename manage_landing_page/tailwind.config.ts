@@ -45,7 +45,10 @@ const config: Config = {
             fontWeight: "400",
           },
         ],
-        bodyM: ["16px", { lineHeight: "26px", fontWeight: "400" }],
+        bodyM: [
+          "16px",
+          { lineHeight: "26px", fontWeight: "400", letterSpacing: "-.2px" },
+        ],
         bodyS: ["14px", { lineHeight: "28px", fontWeight: "400" }],
         headingXL: [
           "56px",

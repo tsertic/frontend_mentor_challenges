@@ -138,7 +138,7 @@ export const testimonials = [
     _id: "2",
     author: "Richard Watts",
     text: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
-    avatarUrl: "/images/avatar-richard .png",
+    avatarUrl: "/images/avatar-richard.png",
   },
   {
     _id: "3",
