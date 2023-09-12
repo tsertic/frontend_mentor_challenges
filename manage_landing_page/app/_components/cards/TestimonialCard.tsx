@@ -7,7 +7,7 @@ interface ITestimonialCard {
 export const TestimonialCard: React.FC<ITestimonialCard> = ({ cardData }) => {
   const { author, text, avatarUrl } = cardData;
   return (
-    <div className="w-full lg:min-w-[540px]  bg-base-200 max-w-[540px] relative pt-[60px] pb-[40px] px-[21px] lg:px-[40px] text-center ">
+    <div className="w-full md:min-w-[540px]  bg-base-200 max-w-[540px] relative pt-[60px] pb-[40px] px-[21px] lg:px-[40px] text-center ">
       <Image
         src={avatarUrl}
         height={72}
@@ -16,7 +16,7 @@ export const TestimonialCard: React.FC<ITestimonialCard> = ({ cardData }) => {
         className="absolute top-[-36px] left-[50%] -translate-x-1/2"
       />
       <p className="text-base-content font-bold mb-[19px]">{author}</p>
-      <p>"{text}"</p>
+      <p>&quot;{text}&quot;</p>
     </div>
   );
 };

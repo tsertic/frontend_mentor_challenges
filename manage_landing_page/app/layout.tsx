@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import { Navigation } from "./_components/Layout/Navigation/Navigation";
 import { Footer } from "./_components/Layout/Footer/Footer";
+import { SimplifyBanner } from "./_components/shared/SimplifyBanner";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <SimplifyBanner />
         <Footer />
       </body>
     </html>

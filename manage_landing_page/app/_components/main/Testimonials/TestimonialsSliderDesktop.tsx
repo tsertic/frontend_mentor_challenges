@@ -16,7 +16,7 @@ export const TestimonialsSliderDesktop = () => {
   return (
     <motion.div
       ref={carouselRef}
-      className="w-full max-w-[1680px] mx-auto overflow-hidden pt-[100px] cursor-grab hidden lg:block"
+      className="w-full max-w-[1680px] mx-auto overflow-hidden pt-[100px] cursor-grab hidden md:block"
     >
       <motion.div
         drag="x"

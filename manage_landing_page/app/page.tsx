@@ -1,9 +1,4 @@
-import {
-  About,
-  Hero,
-  SimplifyBanner,
-  Testimonials,
-} from "./_components/pageSections";
+import { About, Hero, Testimonials } from "./_components/pageSections";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -40,11 +35,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <section>
+      <section className="mb-[42px] lg:mb-[180px]">
         <Testimonials />
-      </section>
-      <section>
-        <SimplifyBanner />
       </section>
     </main>
   );

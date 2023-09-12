@@ -8,7 +8,6 @@ export const TestimonialsSliderMobile = () => {
   const [offsetTest, setOffsetTest] = useState(0);
   useEffect(() => {
     setOffsetTest(() => currTest * 105);
-    console.log(offsetTest);
   }, [currTest]);
 
   //react-swpeable logic
@@ -23,7 +22,7 @@ export const TestimonialsSliderMobile = () => {
     },
   });
   return (
-    <div className="w-full lg:hidden pt-[94px] px-[18px] overflow-hidden">
+    <div className="w-full md:hidden pt-[94px] px-[18px] overflow-hidden">
       <div
         {...handlerSwipe}
         style={{ transform: `translateX(-${offsetTest}%)` }}
@@ -44,7 +43,7 @@ export const TestimonialsSliderMobile = () => {
               key={testimonials._id}
               className={`w-[7px] h-[7px] border-[1px] border-primary ${
                 currTest === i && "bg-primary"
-              } rounded-full`}
+              } rounded-full cursor-pointer`}
               onClick={() => setCurrTest(() => i)}
             ></span>
           );

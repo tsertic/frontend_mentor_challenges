@@ -125,7 +125,7 @@ export const testimonials = [
   {
     _id: "0",
     author: "Anisha Li",
-    text: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
+    text: "Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
     avatarUrl: "/images/avatar-anisha.png",
   },
   {
@@ -137,13 +137,13 @@ export const testimonials = [
   {
     _id: "2",
     author: "Richard Watts",
-    text: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
+    text: "Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!",
     avatarUrl: "/images/avatar-richard.png",
   },
   {
     _id: "3",
     author: "Shanai Gough",
-    text: "“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”",
+    text: "Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.",
     avatarUrl: "/images/avatar-shanai.png",
   },
 ];

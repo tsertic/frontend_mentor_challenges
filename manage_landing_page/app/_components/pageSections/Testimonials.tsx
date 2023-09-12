@@ -12,7 +12,7 @@ export const Testimonials = () => {
       <TestimonialsSliderDesktop />
       <TestimonialsSliderMobile />
       <div className="w-full flex justify-center mt-[48px]">
-        <Button ariaLabel="get started link" href="/">
+        <Button dark={false} ariaLabel="get started link" href="/">
           Get Started
         </Button>
       </div>

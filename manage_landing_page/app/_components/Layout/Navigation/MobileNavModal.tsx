@@ -11,7 +11,7 @@ export const MobileNavModal: React.FC<IMobileNavModal> = ({
 }) => {
   return (
     <div
-      className={`absolute ${
+      className={`fixed ${
         show ? "top-0 " : "top-[-150%] "
       } left-0 w-screen h-screen backdrop-shadow z-10 flex justify-center pt-[103px] px-[24px]  duration-300 transition-all`}
       onClick={closeModal}
