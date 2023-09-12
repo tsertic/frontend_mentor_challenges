@@ -22,7 +22,7 @@ export const MobileNavModal: React.FC<IMobileNavModal> = ({
             <Link
               href={item.path}
               key={item._id}
-              className="text-navMobile capitalize"
+              className="text-base-content text-navMobile capitalize"
             >
               {item.text}
             </Link>

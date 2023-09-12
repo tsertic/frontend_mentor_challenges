@@ -49,14 +49,14 @@ const config: Config = {
         bodyS: ["14px", { lineHeight: "28px", fontWeight: "400" }],
         headingXL: [
           "56px",
-          { lineHeight: "64px", fontWeight: "700", letterSpacing: "-1px" },
+          { lineHeight: "64px", fontWeight: "700", letterSpacing: "-2px" },
         ],
         headingL: [
           "40px",
           {
             lineHeight: "44px",
             fontWeight: "700",
-            letterSpacing: "-0.714px",
+            letterSpacing: "-1.714px",
           },
         ],
         headingM: [

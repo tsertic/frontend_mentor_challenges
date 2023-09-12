@@ -12,7 +12,7 @@ export const Navigation = () => {
   const handleToggleMobileNav = () => setOpenMobileNav(!openMobileNav);
   return (
     <>
-      <header className="absolute top-[45px] lg:top-[56px] left-0 w-full z-40 ">
+      <header className="absolute top-[45px] lg:top-[56px] left-0 w-full z-40 text-base-content">
         <div className=" container-wide flex justify-between items-center max-lg:px-[24px]">
           <Link href={"/"} aria-label="homepage link" className="mb-[-5px]">
             <Logo dark={true} />
