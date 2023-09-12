@@ -18,6 +18,7 @@ const config: Config = {
           "rgb(var(--color-secondary-content) / <alpha-value>)",
         "base-100": "rgb(var(--color-base-100) / <alpha-value>)",
         "base-200": "rgb(var(--color-base-200) / <alpha-value>)",
+        "base-300": "rgb(var(--color-base-300) / <alpha-value>)",
         "base-content": "rgb(var(--color-base-content) / <alpha-value>)",
       },
       fontSize: {
@@ -78,6 +79,9 @@ const config: Config = {
           "30px",
           { lineHeight: "45px", fontWeight: "800", letterSpacing: "-0.619px" },
         ],
+      },
+      boxShadow: {
+        button: "0 15px 15px -10px #FF9F8E",
       },
     },
   },

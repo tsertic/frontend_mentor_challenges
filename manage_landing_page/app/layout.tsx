@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${beVietnamPro.className} text-base-content text-bodyS lg:text-bodyM`}
+        className={`${beVietnamPro.className} text-base-content text-bodyS lg:text-bodyM  bg-base-100`}
       >
         <Navigation />
         {children}
